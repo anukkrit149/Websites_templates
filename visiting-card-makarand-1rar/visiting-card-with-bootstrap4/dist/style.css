@@ -1,0 +1,125 @@
+.crad-v {
+    width: 525px;
+    height: 300px;
+    background:#555 url(http://i.imgur.com/BcIIpjS.jpg);
+    padding: 10px;
+    border: 2px solid #fff;
+    -webkit-box-shadow: 0px 0px 2px 5px #0000002a;
+    box-shadow: 0px 0px 2px 2px #0000002a;
+    margin-bottom: 31px;
+}
+
+
+.imglogo-v {
+    padding: 12px;
+    position: relative;
+    top: 0px;
+}
+
+
+.com-img {
+    border-radius: 10px;
+    border: 6px double #1c3a6b;
+  width:100px;
+  height:100px;
+
+
+}
+
+
+.com-logo {
+    margin-bottom: 13px;
+
+}
+
+span.mobileno {
+    position: relative;
+    left: 39px;
+    top: -10px;
+}
+
+.cionbox {
+    background: #1c3a6b;
+    width: 34px;
+    height: 34px;
+    float: left;
+    border-radius: 50%;
+    text-align: center;
+}
+.op {
+    position: relative;
+    left: 10px;
+}
+
+
+.text-vcard {
+    padding: 42px 0px;
+}
+
+
+div#top-vcard:before {
+    content: "";
+    position: absolute;
+    height: 91px;
+    width: 34px;
+    text-align: left ! important;
+    background:#1c3a6b;
+    left: 15px;
+    top: -12px;
+    border-radius: 0px 0px 14px 15px;
+}
+
+
+strong.font-bolder-new {
+    font-size: 16px;
+    font-weight: bolder ! important;
+}
+
+
+.cionbox {
+    background: #ffffff;
+    width: 25px;
+    height: 25px;
+    float: left;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.card-icon-new {
+    border-radius: 50%;
+    color: #252525;
+    font-size: 14px;
+    position: relative;
+    text-align: center;
+}
+
+
+.text-vcard {
+    padding: 77px 26px;
+    color: white;
+}
+
+
+.com-img {
+    border-radius: 50%;
+    border: 7px solid #d2cecf;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+}
+
+.imglogo-v {
+    padding: 12px;
+    position: relative;
+    top: 35px;
+    right: -80px;
+
+}
+
+.text-white small {
+     font-size: smaller;
+
+}
+.imglogo-v img{
+   
+}

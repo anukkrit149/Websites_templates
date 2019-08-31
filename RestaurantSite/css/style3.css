@@ -1,0 +1,629 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+#myCarousel {
+    position: relative;
+}
+
+.navbar {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(1, 0, 0, 0.5);
+    position: absolute;
+    margin: 0 auto;
+    z-index: 1;
+    width: 100%;
+}
+
+.navbar-collapse {}
+
+.navbar-nav {
+    display: block;
+    margin: 0 auto;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+.nav-item {
+    padding: 0 10px;
+    color: white;
+}
+
+.nav-item:hover {
+    padding: 0 10px;
+    color: white;
+    background-color: rgba(1, 0, 0, 0.5);
+    border-bottom: 3px solid orange;
+    transition: all 0.5s;
+
+}
+
+.nav-link {
+    display: block;
+    color: white;
+    font-size: 25px;
+    font-weight: 550;
+}
+
+.nav-link:hover {
+    color: white;
+    font-size: 25px;
+}
+
+.carousel-inner .item {
+    height: 100vh;
+    width: auto;
+}
+
+.carousel-caption {
+    top: 30%;
+}
+
+.carousel-caption h2 {
+    font-size: 50px;
+    font-style: italic;
+}
+
+.carousel-caption h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.corousel-control.right {
+    background-image: none;
+}
+
+.corousel-control.left {
+    background-image: none;
+}
+
+.history .his-0 {
+    padding: 100px 0;
+    width: 100%;
+    height: 800px;
+}
+
+.his-1 {
+    width: 50%;
+
+    float: left;
+    margin: 0;
+    padding: 0;
+    background-image: url(image/hist_img.jpg);
+    background-size: cover;
+    height: 100%;
+}
+
+.his-2 {
+    width: 50%;
+    background-color: black;
+    height: 100%;
+    padding: 3%;
+    margin: 0;
+    color: white;
+    font-size: 20px;
+    float: left;
+    border: 2px solid white;
+    box-sizing: border-box;
+}
+
+.his-2 h2 {
+    padding-bottom: 30px;
+}
+
+
+/*slick*/
+
+.specialities {
+    padding: 100px 5%;
+    color: white;
+}
+
+.your-class {
+    height: 400px;
+
+}
+
+.box {
+    height: 400px;
+    box-sizing: border-box;
+    padding: 20px;
+
+}
+
+.inner-box {
+    border: 2px solid grey;
+    height: 360px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.inner-box:hover {
+    background-color: aquamarine;
+    border: 2px solid grey;
+    height: 360px;
+    padding: 20px;
+    color: black;
+}
+
+.slick-dots li button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 50px;
+    line-height: 20px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: white;
+}
+
+.slick-dots li.slick-active button:before {
+    color: white;
+}
+
+
+
+.button {
+    border-radius: 30px;
+    background-color: #3cad00;
+    border: none;
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 25px;
+    padding: 15px 30px;
+    width: 230px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: auto;
+}
+
+.button:hover {
+    background-color: #02608c
+}
+
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+
+.team {
+    padding: 100px 0 0 0;
+    margin: 0;
+    padding-bottom: 100px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+
+.team h1 {
+    padding: 50px 0 0;
+    margin: 0;
+    font-size: 70px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    border-top: 2px solid white;
+}
+
+.team-div {
+    padding: 0;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.team-div img {
+    height: 20%;
+    width: 100%;
+    display: block;
+    border: 5px solid grey;
+}
+
+.our-team h2 {
+    text-align: center;
+    color: white;
+}
+
+
+.menu-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 30px;
+    height: auto;
+}
+
+.menu h2 {
+    padding-top: 50px;
+    font-size: 70px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    border-top: 2px solid white;
+}
+
+.menu-1,
+.menu-2,
+.menu-3 {
+    margin: auto;
+    padding: 30px 40px;
+    border: 10px solid grey;
+    background-image: url(image/menuBG.jpg);
+    background-size: cover;
+    height: 800px;
+    /*    box-sizing: border-box;*/
+    width: 100%;
+}
+
+.menu-div h4 {
+    padding-top: 80px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.menu-div h6 {
+    padding: 20px 0 0 5px;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.menu-div p {
+    padding: 0;
+    margin: 6px;
+    font-size: 17px;
+    text-align: center;
+}
+
+
+.footer-div {
+    background-color: #163909;
+    color: white;
+    padding: 20px 3%;
+    padding-bottom: 10px;
+    border-top: 2px solid white;
+}
+
+.footer-div h2 {
+    font-size: 50px;
+    padding: 20px;
+}
+
+.footer-div h3 {
+    font-size: 30px;
+    margin: 10px 20px 0;
+    background-color: #424242;
+    padding: 10px;
+}
+
+.footer-div p {
+    font-size: 20px;
+    margin: 0 20px;
+    background-color: #707070;
+    padding: 10px;
+    margin-bottom: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    .menu-1,
+    .menu-2,
+    .menu-3 {
+        margin: auto;
+        padding: 30px 40px;
+        border: 2px solid grey;
+        background-image: url(image/menuBG.jpg);
+        background-size: cover;
+        height: 50px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .navbar-toggler-icon {
+        z-index: 2;
+        background-image: url("image/hamIcon.png");
+    }
+
+    .in {
+        margin: auto;
+        background: black;
+    }
+
+    .navbar {
+        min-height: 20px;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1440px) {
+
+    .carousel-inner .item {
+        height: auto;
+    }
+
+    .carousel-caption {
+        top: 20%;
+    }
+
+    .menu-div {
+        grid-template-columns: 1fr;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 400px) {
+
+    .carousel-inner .item {
+        height: auto;
+    }
+
+    .carousel-caption {
+        padding: 0;
+        margin: 0;
+        top: 7%;
+    }
+
+    .carousel-caption h2 {
+        font-size: 18px;
+    }
+
+    .carousel-caption h1 {
+        font-size: 21px;
+    }
+
+    .carousel-inner .item {
+        height: 181px;
+    }
+
+    .history .his-0 {
+        padding: 80px 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .his-1 {
+        width: 100%;
+        height: 250px;
+        float: none;
+    }
+
+
+
+    .his-2 {
+        width: 100%;
+        padding: 12%;
+        float: none;
+    }
+
+    .his-2 h2 {
+        padding-bottom: 30px;
+
+    }
+
+
+    .specialities {
+        padding: 30px 5%;
+    }
+
+    .inner-box h3 {
+        font-size: 20px;
+    }
+
+    .team {
+        margin-top: 50px;
+        padding: 10px 0;
+
+    }
+
+    .team h1 {
+        font-size: 50px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .team-div {
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .team-div img {
+        height: 20%;
+        width: 100%;
+        display: block;
+        border: 5px solid grey;
+    }
+
+    .footer-div {
+        background-color: black;
+        color: white;
+        padding: 10px 3%;
+        padding-bottom: 10px;
+    }
+
+    .footer-div h2 {
+        font-size: 40px;
+        padding: 20px;
+    }
+
+    .footer-div h3 {
+        font-size: 25px;
+        margin: 10px 20px 0;
+        background-color: dimgrey;
+        padding: 10px;
+    }
+
+    .footer-div p {
+        font-size: 15px;
+        margin: 0 20px;
+        background-color: grey;
+        padding: 10px;
+        margin-bottom: 60px;
+    }
+
+    .menu-div {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0px;
+    }
+
+    .menu h2 {
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    .menu-1,
+    .menu-2,
+    .menu-3 {
+        margin: auto;
+        padding: 20px 10px;
+        border: 2px solid grey;
+        background-image: url(image/menuBG.jpg);
+        background-size: cover;
+        height: 750px;
+        box-sizing: border-box;
+    }
+
+    .menu-div h4 {
+        padding-top: 80px;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .menu-div h6 {
+        padding: 20px 0 0 5px;
+        font-size: 20px;
+        font-weight: 550;
+    }
+
+    .menu-div p {
+        padding: 0;
+        margin: 6px;
+        font-size: 15px
+    }
+
+    .slider-img-2 {
+        height: 100%;
+    }
+
+    .button {
+        margin-top: 30px;
+    }
+
+}

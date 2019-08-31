@@ -1,0 +1,253 @@
+<html>
+	
+<head>
+		<title>wiseKreator</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+		<link rel="shortcut icon" href="images/logoF.png"/>
+		<link href="../fonts.googleapis.com/cssd2d5.css?family=Open+Sans" rel="stylesheet">
+		
+		
+		<link rel="stylesheet" href="css/Wkecard.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+			
+	</head>
+	<body>
+		
+	<div class="Wkcard">
+		<div class="Wkfront">
+			<div class="Wkfront-main">
+			  <div class="img-div">
+				  <br><br><br><br><br><br><br><br><br>
+				  <!-- backgroub image can come here if needed -->
+			  </div>
+			  <div class="Wkfront-content">
+				<p>We are Kreators | Designers | Developers | Consultants | Writers </p>
+			  </div>
+			</div>	
+			<a class="right-arrow flip second-popover " href="javascript:void(0)"><img class="imgeff effect4" src="images/right-arrow.png"></a>	
+			 <p class="right-arr-sug effect4 imgeff" style="color:#3f1d0b"><a href="wiseKreator.vcf" target="_blank" style="text-decoration:none; color:#3f1d0b"><img src="images/save-icon.png" style="width:15px; margin-left:15px;"/> &nbsp; Save</a></p> 
+		</div>
+		<div class="Wkback">
+			<div class="Wkback-main">
+			  <div class="Wkback-div">
+					<div class="col-sm-5 col-xs-4">
+						<div class="enq-div">
+							<img src="images/logoF.png"></img>
+						</div>
+					</div>
+					<div class="col-sm-7 col-xs-8">
+					<div class="addressDiv ">
+						<span class="info-div"><b>wiseKreator</b></span></br>
+						<a href="tel:+91 9403155604" title="Call Us"><img class=" effect10" src="images/phone.png" /> &nbsp;+91 9403155604 </a><br>
+						<a class=" first-popover" href="https://wa.me/919403155604" title="Whatsapp Us"><img class="effect1" src="images/whatsapp.png" /> &nbsp;+91 9403155604 </a><br>
+					  	<a href="mailto:contactus@wisekreator.com" title="Mail Us"><img class=" effect10" src="images/envelope.png" /> &nbsp;contactus@wisekreator.com </a><br>
+					  	<a href="https://wisekreator.com/" target="_blank" title="Website"><img class=" effect11" src="images/web.png" /> &nbsp;www.wisekreator.com</a>
+					  	</p>
+					</div>
+					</div>
+					<div class="col-sm-12 col-md-12 col-xs-12">
+					<div class="address">
+						<p class="third-popover"><a href="https://goo.gl/maps/zFcgn2ac4C57QuSC6" target="_blank"><img class=" effect10" src="images/location.png" style="width: 15px" />&nbsp;Mumbai</a>
+					 </div>	
+					</div>
+				</div>
+			</div>
+			<a class="left-arrow flip fourth-popover" href="javascript:void(0)"><img class="imgeff effect12" src="images/right-arrow1.png"></a>
+			 <p class="left-arr-sug effect12 imgeff" style="color:#3f1d0b"><a href="wiseKreator.vcf" target="_blank" style="text-decoration:none; color:#3f1d0b"><img src="images/save-icon.png" style="width:15px; margin-left:15px;"/> &nbsp; Save</a></p> 
+		</div>
+		
+		
+	</div>
+	
+	
+  	<script src="js/jquery-1.12.4.js"></script>
+	<script src="js/jquery.flip.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+		
+		<script>
+		
+		var localstrg="ecard_wiseKreator";		
+		//localStorage.setItem(localstrg, "0");		
+		
+		
+		$(document).ready(function() {
+			//$('.Wkcard a').swipebox();
+			$('.Wkcard').flip({
+				 trigger: 'manual'
+			});
+		});
+		
+		$(window).load(function(){
+			seteffect();
+		});
+		
+		
+		$('.flip').click(function(){
+			$(".Wkcard").flip('toggle');
+			seteffect();
+			//$( ".effect" ).effect( "highlight", "slow" );
+			
+			
+			
+		});
+		
+		function seteffect(){
+
+			$('.imgeff').fadeOut();
+			$(".right-arrow").css('left','0');
+			$(".left-arrow").css('right','0');
+			//$( ".effect10" ).css('visibility','hidden');
+			//$( ".effect11" ).css('visibility','hidden');
+			
+			$( ".effect" ).fadeIn();
+			 setTimeout(function(){ $( ".effect1" ).fadeIn(); }, 800);
+			 setTimeout(function(){ $( ".effect2" ).fadeIn(); }, 1300);
+			 setTimeout(function(){ $( ".effect3" ).fadeIn(); }, 1800);
+
+
+			 //first popover
+			 setTimeout(function(){ 
+				
+				$( ".effect4" ).fadeIn();
+				
+				if(localStorage.getItem(localstrg)!=1)
+				{
+					$('body').append('<div class="modal-backdrop fade in"></div><a class="popover-remove" href="javascript:void(0)">GOT IT !</a>');
+				}
+				
+				
+				if($('.Wkback').css('z-index') > 0 && localStorage.getItem(localstrg)!=1)
+				{								
+					$('.first-popover').popover({
+					   'placement':'top',
+					   'html':true,
+					   'content':'Click On <a title="Whatsapp Us" target="_blank" href="https:wa.me/919403155604"><img class="" width="20" src="images/whatsapp.png"></a>',
+					  container: 'body'
+					}).popover('show');						
+					
+				}
+					 
+			 }, 2300);				 
+			 
+			 //second popover
+			 setTimeout(function(){ 
+			 	
+				$('.right-arrow').animate({
+			     left: '90%'
+			   },
+			   {			    
+			     duration: 'slow',
+			     complete: function(){
+			     	
+			     	if($('.Wkfront').css('z-index') > 0 && localStorage.getItem(localstrg)!=1)
+					{
+						//alert(localStorage.getItem(localstrg));
+						
+						$('.second-popover').popover({
+						   'placement':'bottom',
+						   'html':true,
+						   'content':'Click On <a href="javascript:void(0)" class="flip_popover"><img src="images/right-arrow1.png" width="22"></a> To Flip Card',
+						  container: 'body'
+						}).popover('show');
+						
+					}	
+			    }
+			});			 	
+			 	
+			 	
+			 }, 2300);
+			 
+			 
+			 
+			 setTimeout(function(){ $( ".effect5" ).fadeIn(); }, 800);
+			 
+			 setTimeout(function(){ $( ".effect6" ).fadeIn(); }, 1800);
+			 setTimeout(function(){ $( ".effect7" ).fadeIn(); }, 1300)
+			 ;
+			 setTimeout(function(){ $( ".effect8" ).fadeIn(); }, 2800);
+			 
+			 //third popover
+			 setTimeout(function(){ 
+				
+				$( ".effect9" ).fadeIn();
+				if($('.Wkback').css('z-index') > 0 && localStorage.getItem(localstrg)!=1)
+				{	
+					//$('body').append('<div class="modal-backdrop fade in"></div>');			
+					$('.third-popover').popover({
+					   'placement':'top',
+					   'html':true,
+					   'content':'Click On <a title="Locate Us" target="_blank" href="https://goo.gl/maps/zFcgn2ac4C57QuSC6"><img class="" width="20" src="images/location.png"></a>',
+					  container: 'body'
+					}).popover('show');						
+					
+				}				
+				
+			 }, 2300);
+			 
+			// setTimeout(function(){  $( ".effect10" ).fadeIn();  }, 1700);
+			// setTimeout(function(){ $( ".effect11" ).fadeIn(); }, 2200);
+			 
+			 
+			 setTimeout(function(){ $( ".effect12" ).fadeIn(); }, 2300);
+
+			 //fourth popover
+			 setTimeout(function(){ 
+				$('.left-arrow').animate({
+			     right: '90%'
+			   },
+			   {			    
+			     duration: 'slow',
+			     complete: function(){
+			     	if($('.Wkback').css('z-index') > 0 && localStorage.getItem(localstrg)!=1)
+					{
+						
+						$('.fourth-popover').popover({
+						   'placement':'bottom',
+						   'html':true,
+						   'content':'Click On <a href="javascript:void(0)" class="flip_popover left-popoverarrow"><img src="images/right-arrow1.png" width="22"></a> To Flip Card',
+						  container: 'body'
+						}).popover('show');
+						
+					}	
+			    }
+			});				 	
+			 	
+			 }, 2300);
+
+		}
+		
+		
+        //click of arrow popover
+		$('body').on('click','.flip_popover',function(){
+		  $('.first-popover').popover('destroy');
+		  $('.second-popover').popover('destroy');
+		  $('.third-popover').popover('destroy');
+		  $('.fourth-popover').popover('destroy');
+		  $('.modal-backdrop').remove();
+		  $('.popover-remove').remove();
+		  if($('.Wkback').css('z-index') > 0)
+		  {
+		  	localStorage.setItem(localstrg, "1");
+		  }
+		  $(".Wkcard").flip('toggle');
+		  seteffect();
+		});
+
+		// click of got it button
+		$('body').on('click','.popover-remove',function(){
+		  $('.first-popover').popover('destroy');
+		  $('.second-popover').popover('destroy');
+		  $('.third-popover').popover('destroy');
+		  $('.fourth-popover').popover('destroy');
+		  $('.modal-backdrop').remove();	
+		  $('.popover-remove').remove();			  
+		  localStorage.setItem(localstrg, "1");		  	
+		});		
+		
+		</script>
+		
+	</body>
+
+
+</html>

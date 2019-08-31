@@ -1,0 +1,109 @@
+body {
+	margin: 0;
+	overflow: hidden;
+}
+
+canvas {
+    background-color: white;
+}
+
+#instructions {
+	position: absolute;
+	color: #000;
+	bottom: 0;
+	padding-bottom: 6px;
+	font-family: sans-serif;
+    font-size: 20px;
+	width: 100%;
+	text-align: center;
+	pointer-events: none;
+}
+.icons
+{
+    
+    position: fixed;
+    top: 30%;
+    left: 0%;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.icons a
+{
+    text-decoration: none;
+    text-transform: auto;
+    padding: 10px;
+    font-size: 22px;
+    font-family: 'Oswald', sans-serif;
+    margin: 3px;
+    text-align: right;
+    border-radius: 0px 50px 50px 0px;
+    transform: translate(-140px, 0px);
+    transition: 0.5s;
+}
+
+.icons a:hover
+{
+
+     transform: translate(-0px, 0px);
+}
+
+.icons a i
+{
+    margin-left: 25fpx;
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    color: black;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    border-radius: 50%;
+}
+
+.icons a i.fa-home
+{
+    color: #00FF00;
+}
+
+.icons a i.fa-envelope
+{
+    color: #C6C6C6;
+}
+
+.icons a i.fa-video-camera
+{
+    color: #0000CD;
+}
+
+.icons a i.fa-whatsapp
+{
+    color: #008B45;
+}
+
+.wisekreator
+{
+    background-color: #00FF00;
+    color: white;
+}
+
+.gmail
+{
+    background-color: #C6C6C6;
+    color: white;
+}
+
+
+.zoom
+{
+    background-color: #0000CD;
+    color: white;
+}
+
+
+.whatsapp
+{
+    background-color: #008B45;
+    color: white;
+}

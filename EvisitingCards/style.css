@@ -1,0 +1,134 @@
+body {
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: #d3dbe8;
+}
+
+.card {
+  width: 310px;
+  height: 370px;
+  margin: auto;
+  display: none;
+}
+.card-square {
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  background-color: #404348;
+  -webkit-transform: translateX(-100vw);
+          transform: translateX(-100vw);
+}
+.card-wrap {
+  display: flex;
+  height: 100%;
+}
+.card-photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  background-color: #404348;
+  z-index: 5;
+}
+.card-photo__img {
+  box-sizing: border-box;
+  padding: 8px;
+  width: 150px;
+  height: 150px;
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  margin-bottom: 10px;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+
+}
+.card-photo__name {
+  color: #fff;
+  font-size: 22px;
+  
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.card-photo__name-pseudo {
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+.card-photo__profession {
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  font-weight: 100;
+  position: relative;
+}
+.card-photo__profession-pseudo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: #fff;
+}
+.card-photo__profession--bold {
+  font-weight: 500;
+}
+.card-info {
+  position: relative;
+  overflow: hidden;
+  width: 0;
+  background-color: #33363B;
+  -webkit-transform: translateX(-700px);
+          transform: translateX(-700px);
+  opacity: 0;
+}
+.card-info__arrow {
+  display: block;
+  content: '';
+  width: 30px;
+  height: 30px;
+  background-color: #404348;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  margin-left: -20px;
+  opacity: 0;
+}
+.card-info-list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+}
+.card-info-list__point {
+  margin: 6px 0;
+  transition: all .3s;
+}
+.card-info-list__point:hover {
+  letter-spacing: 2px;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.card-info-list .fa {
+  color: white;
+  font-size: 20px;
+  margin-right: 5px;
+  float: left;
+}
+.card-info-list a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+}

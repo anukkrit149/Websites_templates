@@ -1,0 +1,25 @@
+.site-footer {
+    padding-top: 17rem;
+    padding-bottom: 4rem;
+    background: #6d6767; }
+    .site-footer p {
+      color: #8c8c8c;
+    font-size: 20px }
+    .site-footer h2, .site-footer h3, .site-footer h4, .site-footer h5 {
+      color: #fff; }
+    .site-footer a {
+      color: #b3b3b3; }
+      .site-footer a:hover {
+        color: white; }
+    .site-footer ul,li,a {
+      font-size: 20px;
+        margin-bottom: 10px; 
+      color:#b3b3b3 }
+    .site-footer .footer-heading {
+      font-size: 35px;
+      color: #fff; }
+  
+
+
+
+      
